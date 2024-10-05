@@ -2,29 +2,21 @@ $(window).on('load',function(){
   gsap.to('#loader',1,{y:"-100%"});
   gsap.to('#loader',1,{opacity:0});
   gsap.to('#loader',0,{display:"none",delay:1});
-  gsap.to('#header',0,{display:"block",delay:1});
+  gsap.to('#header',0,{display:"block",delay:1})
   gsap.to('#navigation-content',0,{display:"none"});
   gsap.to('#navigation-content',0,{display:"flex",delay:1});
-});
-
+})
 $(function(){
   $('.color-panel').on("click",function(e) {
     e.preventDefault();
     $('.color-changer').toggleClass('color-changer-active');
-  });
-
-  // Color theme change logic
-  $('.colors a').on("click",function(e) {
-    e.preventDefault();
-    var attr = $(this).attr("title"); // Fetch color (e.g., 'color-green')
-    console.log(attr); // Debug: Outputs selected theme name to the console
-    
-    // Append the corresponding CSS file for the selected theme
-    $('head').append('<link rel="stylesheet" href="css/'+attr+'.css" class="theme-style">');
-    
-    // Remove previously applied theme stylesheets
-    $('link.theme-style').not(':last').remove();
-  });
+});
+$('.colors a').on("click",function(e) {
+  e.preventDefault();
+  var attr = $(this).attr("title");
+  console.log(attr);
+  $('head').append('<link rel="stylesheet" href="css/'+attr+'.css">');
+});
 });
 $(function(){
      $('.menubar').on('click',function(){
@@ -197,5 +189,4 @@ $(function(){
   $('a').hover(cursorhover,cursor);
   $('.navigation-close').hover(cursorhover,cursor);
 
-}
-)
+})
