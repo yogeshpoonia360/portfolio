@@ -1,0 +1,83 @@
+/*-----------------
+* [Master Stylesheet]
+*
+* Theme    : WillyWonka
+* Version  : 1.0
+* Author   : sujal
+* 
+------------------*/
+::-webkit-scrollbar{
+    width: 4px;
+    color:#ff0080;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff0080; 
+    border-radius: 4px;
+    width: 4px;
+  }
+  #breaker{
+      background-color: #ff0080;
+  }
+  .color{
+      color: #ff0080;
+  }
+  #about-content a{
+      color:#ff0080 ;
+  }
+  .cv a button{
+      background: #ff0080;
+  }
+  .service-img img{
+    background: #ff0080;
+    box-shadow:0px 0px 0px 0px #ff0080 ;
+  }
+  .service:hover .service-img img{
+    box-shadow:0px 0px 0px 400px #ff0080 ;
+}
+.html-progress{
+    background: #ff0080;
+}
+.js-progress{
+    background: #ff0080;
+}
+.adobe-progress{
+    background: #ff0080;
+}
+.php-progress{
+    background: #ff0080;
+}
+.jquery-progress{
+    background: #ff0080;
+}
+.seo-progress{
+    background: #ff0080;
+}
+.portfolio-text h2{
+    color: #ff0080;
+}
+.portfolio-text button{
+    color: #ff0080;
+    border: 1.5px solid #ff0080;
+}
+.portfolio-text button::before{
+    background: #ff0080;
+}
+.portfolio-image img::before{
+    background: #ff0080;
+}
+.blog-date{
+    background: #ff0080;
+}
+form button{
+    background: #ff0080;
+}
+@media all and (max-width: 550px) and (min-width: 5px){
+    .service:hover .service-img img{
+        box-shadow:0px 0px 0px 0px #ff0080 ;
+    }
+}
+/* Color Theme: Green */
+.theme-button {
+    background: #ff0080 !important;  /* Change the button color to green */
+    color: whitesmoke !important;    /* Keep text color white */
+}
