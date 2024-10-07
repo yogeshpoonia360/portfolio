@@ -1415,7 +1415,7 @@ For devices with smaller width like mobile phone
         display: none;
     }
     #breaker{
-        height: 50vh;
+        height: 100vh;
         width: 200%;
         background-color: #03fa6e;
         opacity: 1;
@@ -2576,5 +2576,36 @@ for tabs and large phones
         border: none;
         border-radius: 8px;
         transition: all .4s ease;
+    }
+}
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Smaller font on mobile */
+    }
+
+    #navigation-content {
+        height: 100vh; /* Full screen height for menu */
+    }
+
+    section {
+        width: 100vw;  /* Full width for sections */
+        height: 100vh; /* Full height for sections */
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px; /* Slightly larger font on tablets */
+    }
+
+    #navigation-content {
+        height: 100vh;
+    }
+
+    section {
+        width: 100vw;
+        height: 100vh;
     }
 }
